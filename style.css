@@ -9,7 +9,7 @@ html{
 }
 @media (max-width: 61.25em){
   html{
-    font-size:55%;
+    font-size:53%;
   }
 }
 body{
@@ -55,7 +55,7 @@ nav li{
 }
 @media(max-width:28.75em){
   nav{
-    justify-content: center;
+    justify-content: left;
   }
   nav li{
     margin: 0 1rem;
@@ -109,11 +109,11 @@ a:hover{
   color:black;
   transition: 1.1s;
 }
-@media(max-width:600px){
+@media(max-width:400px){
   #welcome-section{
     padding-top: 100px;
-    height: 30%;
-    width:90%;
+    height: 50%;
+    
     margin-left: 0px;
   }
   #titulo-welcome{
@@ -139,6 +139,7 @@ a:hover{
 
 
 .projects-section{
+  margin-top:10px;
   text-align:center;
   padding: 10rem 2rem;
   background: #aaff;
@@ -162,6 +163,7 @@ a:hover{
 }
 
 .project-title{
+  margin-top:10px;
   font-size: 2rem;
   padding: 2rem 0.5rem;
   
@@ -195,6 +197,8 @@ footer > p{
 }
 @media(max-width: 28.75em){
   footer{
+    padding-top: 10px;
+    margin-top:20px;
     flex-direction: column;
     text-align: center;
   }
@@ -215,7 +219,7 @@ footer > p{
 }
 @media(max-width: 28.75em){
   .contactos-section-header>h2{
-    font-size:3.5rem;
+    font-size:1.5rem;
   }
   .contact-details{
     display: flex;
