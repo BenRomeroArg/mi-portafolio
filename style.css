@@ -113,6 +113,7 @@ a:hover{
   #welcome-section{
     padding-top: 100px;
     height: 50%;
+    width: 400px;
     
     margin-left: 0px;
   }
@@ -127,12 +128,13 @@ a:hover{
   }
   
   nav{
-    height:180px;
+    height:160px;
   }
   ul{
     list-style: none;
     display:flex;
     flex-direction: column;
+    text-align: left;
   }
   
 }
@@ -210,7 +212,7 @@ footer > p{
   justify-content: center;
   text-align: center;
   width:100%;
-  height: 80vh;
+  height: 90vh;
   padding: 0 1rem;
   background: silver;
 }
@@ -219,13 +221,21 @@ footer > p{
 }
 @media(max-width: 28.75em){
   .contactos-section-header>h2{
-    font-size:1.5rem;
+    margin-top: 15px;
+    font-size:1.2rem;
   }
   .contact-details{
+    margin-top: 10px;
     display: flex;
-    flex-direction: column;
-    font-size: 1rem;
+    flex-direction: row;
+    font-size: medium;
     
+  }
+  #volver-footer{
+    margin-top: 40px;
+  }
+  footer{
+    margin-top: 20px;
   }
 }
 .contactos-link{
