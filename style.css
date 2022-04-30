@@ -163,12 +163,13 @@ a:hover{
   .projects-section{
     margin-top: 5px;
     padding: 10px;
-    max-height: 1600px;
+    max-height: 1900px;
+    width: 510px;
   }
   .contenedor-proyectos-img{
     max-height: 1200px;
     grid-gap: 20px;
-    line-height: 0.5; 
+    line-height: 0.7; 
     
   }
   .projectos-imagen{
@@ -238,6 +239,10 @@ footer > p{
   .contactos-section-header>h2{
     margin-top: 30px;
     font-size:1.7rem;
+    
+  }
+  .contacto-section{
+    width:510px;
   }
   .contact-details{
     margin-top: 0px;
