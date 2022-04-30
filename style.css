@@ -109,8 +109,8 @@ a:hover{
 @media(max-width:450px){
   #welcome-section{
     padding-top: 10px;
-    height: 100%;
-    width: 410px;
+    height: 110%;
+    width: 510px;
     
     margin-left: 0px;
   }
@@ -158,23 +158,22 @@ a:hover{
 @media (max-width: 450px){
   .projects-section-header{
     font-size: 1.5rem;
-    margin-top: 2.9rem;
+    margin-top: 2.2rem;
   }
   .projects-section{
     margin-top: 5px;
     padding: 10px;
-    height: 230vh;
+    max-height: 1600px;
   }
   .contenedor-proyectos-img{
-    max-height: 800px;
+    max-height: 1200px;
     grid-gap: 20px;
     line-height: 0.5; 
     
   }
   .projectos-imagen{
     margin-top: 5px;
-    transform: scale(0.5);
-    
+    transform: scale(0.7); 
     
   }
   
@@ -214,6 +213,7 @@ footer > p{
 }
 @media(max-width: 450px){
   footer{
+    width:510px;
     padding-top: 10px;
     margin-top:20px;
     flex-direction: column;
@@ -244,6 +244,7 @@ footer > p{
     display: flex;
     flex-direction: row;
     font-size: small;
+    width:510px;
     
   }
   #volver-footer{
