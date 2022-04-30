@@ -4,12 +4,11 @@
 }
 html{
   box-sizing: border-box;
-  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body{
-  font-size:1.8rem;
+  font-size:1.2rem;
   font-weight:400;
   line-height: 1.8;
   background-color:#77ff0f55;
@@ -19,10 +18,10 @@ h1, h2 {
   text-align:center;
 }
 h1{
-  font-size: 6rem;
+  font-size: 2.5rem;
 }
 h2{
-  font-size: 4.2rem;
+  font-size: 1.9rem;
 }
 nav {
   top: 0;
@@ -49,7 +48,8 @@ nav li{
   margin-right:2.5rem;
   display:flex;
 }
-@media(max-width:420px){
+@media(max-width:450px){
+  
   nav{
     justify-content: left;
   }
@@ -62,12 +62,13 @@ nav li{
 nav li a{
   color:black;
   display: block;
-  font-size:2.9rem;
+  font-size:2.1rem;
   text-decoration:none;
   cursor:grab;
 }
 a:hover{
   color:#ff9933;
+  
   
 }
 .welcome-section {
@@ -75,7 +76,7 @@ a:hover{
   width:100%;
   background-color: #447fff;
   border-radius: 20px;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,7 +86,7 @@ a:hover{
 .welcome-section > p{
   padding-left: 2rem;
   padding-top: 4rem;
-  font-size:3.4rem;
+  font-size:2.1rem;
   font-weight: 400;
   color: silver;
 }
@@ -94,9 +95,9 @@ a:hover{
 .profile-title {
   color: silver;
    font-weight:600;
-  font-size: 2.2rem;
+  font-size: 1.2rem;
   justify-items: center;
-  padding-top: 60px;
+  padding-top: 190px;
   text-align:center;
   text-decoration:none;
   cursor: grab;
@@ -105,10 +106,10 @@ a:hover{
   color:black;
   transition: 1.1s;
 }
-@media(max-width:420px){
+@media(max-width:450px){
   #welcome-section{
-    padding-top: 100px;
-    height: 50%;
+    padding-top: 10px;
+    height: 100%;
     width: 410px;
     
     margin-left: 0px;
@@ -141,51 +142,68 @@ a:hover{
 
 
 .projects-section{
-  margin-top:20px;
+  margin-top:30px;
   text-align:center;
-  padding: 10rem 2rem;
-  background: #aaff;
+  padding: 1rem 1.5rem;
+  background: rgb(91, 91, 142);
   border-radius: 20px;
-  height: 190vh;
+  height: 290vh;
 }
 .projects-section-header{
   max-width: 640px;
-  margin: 0 4rem;
+  margin-top: 2rem;
   border-bottom: 0.3rem solid  silver;
+  font-size: 2.5rem;
 }
-@media (max-width: 420px){
+@media (max-width: 450px){
   .projects-section-header{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-top: 2.9rem;
   }
   .projects-section{
-    padding: 2rem 1rem;
-    height: 190vh;
+    margin-top: 5px;
+    padding: 10px;
+    height: 230vh;
   }
-  .contenedor-proyectos{
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(5,20px);
+  .contenedor-proyectos-img{
+    max-height: 800px;
+    grid-gap: 20px;
+    line-height: 0.5; 
+    
+  }
+  .projectos-imagen{
+    margin-top: 5px;
+    transform: scale(0.5);
+    
+    
   }
   
 }
-.contenedor-proyectos{
-  margin-top: 10px;
+.contenedor-proyectos-img{
+  margin-top: 5px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(3,50px);
-  grid-gap:175px 20px;
-
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: /*repeat(3,50px)*/ max-content;
+  grid-gap:15px;
+  align-items: center;
+  justify-content: center;
+  
 }
 .projectos-imagen{
-  
-  margin-top: 10px;
+  margin-left:140px;
+  margin-top: 5px;
   width: 200px;
   height: 200px;
+}
+.contenedor-proyectos-img a{
+  text-decoration: none;
+  font-size: 2rem;
 }
 
 footer{
   display:flex;
   justify-content: space-evenly;
-  padding: 2rem;
+  padding: 1rem;
   border-radius:30px;
   border-top: 4px solid silver;
   background-color: #77ffff55;
@@ -194,7 +212,7 @@ footer{
 footer > p{
   margin: 1rem;
 }
-@media(max-width: 420px){
+@media(max-width: 450px){
   footer{
     padding-top: 10px;
     margin-top:20px;
@@ -209,30 +227,27 @@ footer > p{
   justify-content: center;
   text-align: center;
   width:100%;
-  height: 120vh;
+  height: 130vh;
   padding: 0 1rem;
   background: silver;
 }
 .contactos-section-header> h2{
   font-size: 2rem;
 }
-@media(max-width: 420px){
+@media(max-width: 450px){
   .contactos-section-header>h2{
-    margin-top: 40px;
-    font-size:1.1rem;
+    margin-top: 30px;
+    font-size:1.7rem;
   }
   .contact-details{
     margin-top: 0px;
     display: flex;
     flex-direction: row;
-    font-size: medium;
+    font-size: small;
     
   }
   #volver-footer{
     margin-bottom: 5px;
-  }
-  footer{
-    margin-top: 40px;
   }
 }
 .contactos-link{
@@ -245,7 +260,7 @@ footer > p{
   flex-direction: row;
 }
 .contact-details{
-  font-size: 2rem;
+  font-size: 1.9rem;
   
   transition: transform 0.3s ease-out;
   
@@ -259,7 +274,7 @@ footer > p{
   padding:5px;
   margin-left:1px;
   border-radius:10px;
-  font-weight:800;
+  font-weight:700;
   background-color: #77ffff;
   
 }
