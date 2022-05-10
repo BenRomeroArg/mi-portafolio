@@ -106,15 +106,15 @@ a:hover{
   color:black;
   transition: 1.1s;
 }
-@media(max-width:450px){
+@media(max-width:590px){
   #welcome-section{
     padding-top: 10px;
-    height: 110%;
+    height: 150vh;
     width: 510px;
-    
     margin-left: 0px;
   }
   #titulo-welcome{
+    padding-top: 10px;
     margin-top: 80px;
     margin-left:0px;
   }
@@ -125,8 +125,8 @@ a:hover{
   }
   
   nav{
-    height:160px;
-    width:410px;
+    height:190px;
+    width:100%;
   }
   ul{
     list-style: none;
@@ -135,7 +135,7 @@ a:hover{
     text-align: left;
   }
   .profile-title{
-    margin-top:10px;
+    margin-top:5px;
   }
   
 }
@@ -147,7 +147,7 @@ a:hover{
   padding: 1rem 1.5rem;
   background: rgb(91, 91, 142);
   border-radius: 20px;
-  height: 1800px;
+  height: 1500px;
 }
 .projects-section-header{
   max-width: 640px;
@@ -155,48 +155,69 @@ a:hover{
   border-bottom: 0.3rem solid  silver;
   font-size: 2.5rem;
 }
-@media (max-width: 450px){
+@media (max-width: 590px){
   .projects-section-header{
     font-size: 1.5rem;
     margin-top: 2.2rem;
   }
   .projects-section{
     margin-top: 5px;
-    height: 2200px;
-    width: 510px;
+    height: 1900px;
+    width: 100%;
   }
   .contenedor-proyectos-img{
-    max-height: 1200px;
-    grid-gap: 10px;
+    max-height: 255px;
+    grid-gap: 5px;
     line-height: 0.7; 
     
   }
   .projectos-imagen{
     margin-top: 5px;
-    transform: scale(0.7); 
+    transform: scale(0.85); 
     
+  }
+  .contenedor-proyectos{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap:5px;
   }
   
 }
+.contenedor-proyectos{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  border-top: black 10px solid;
+  border-radius: 10px;
+  grid-gap: 20px;
+  padding-top: 20px;
+
+}
 .contenedor-proyectos-img{
-  margin-top: 5px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-left: 5px;
   display: grid;
   grid-template-columns: repeat(1,1fr);
   grid-template-rows: /*repeat(3,50px)*/ max-content;
-  grid-gap:15px;
-  align-items: center;
+  grid-gap:5px;
   justify-content: center;
+  border: 5px black solid;
+  border-radius: 10px;
+  width: 260px;
+  background-color: antiquewhite;
   
 }
 .projectos-imagen{
-  margin-left:140px;
+  
   margin-top: 5px;
-  width: 200px;
+  width: 250px;
   height: 200px;
+  border-radius: 10px;
 }
 .contenedor-proyectos-img a{
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.7rem;
+  
 }
 
 footer{
@@ -211,7 +232,7 @@ footer{
 footer > p{
   margin: 1rem;
 }
-@media(max-width: 450px){
+@media(max-width: 590px){
   footer{
     width:510px;
     padding-top: 10px;
@@ -228,20 +249,20 @@ footer > p{
   text-align: center;
   width:100%;
   height: 150vh;
-  padding: 0 1rem;
+  padding-top: 10px;
   background: silver;
 }
 .contactos-section-header> h2{
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
-@media(max-width: 450px){
+@media(max-width: 590px){
   .contactos-section-header>h2{
     margin-top: 30px;
     font-size:1.7rem;
     
   }
   .contacto-section{
-    width:510px;
+    width:590px;
   }
   .contact-details{
     margin-top: 0px;
@@ -265,7 +286,7 @@ footer > p{
   flex-direction: row;
 }
 .contact-details{
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   
   transition: transform 0.3s ease-out;
   
