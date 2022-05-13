@@ -48,13 +48,13 @@ nav li{
   margin-right:2.5rem;
   display:flex;
 }
-@media(max-width:450px){
+@media(max-width:590px){
   
   nav{
     justify-content: left;
   }
   nav li{
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     
   }
 }
@@ -178,6 +178,7 @@ a:hover{
   }
   .contenedor-proyectos{
     display:grid;
+    max-width: 220px;
     grid-template-columns: repeat(1,1fr);
     grid-gap:5px;
   }
@@ -264,35 +265,42 @@ footer > p{
   .contacto-section{
     width:590px;
   }
-  .contact-details{
-    margin-top: 0px;
-    display: flex;
-    flex-direction: row;
-    font-size: small;
-    width:510px;
-    
-  }
+  
   #volver-footer{
     margin-bottom: 5px;
   }
+  .contactos-link:hover{
+    transform: translateX(20px);
+  }
 }
 .contactos-link{
-  display:flex;
-  text-align:center;
+  margin-top: 30px;
+  margin-left:10px;
+  padding-top: 10px;
+  padding-left: 15px;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: /*repeat(3,50px)*/ max-content;
+  grid-gap:5px;
   justify-content: center;
-  width: 100%;
-  margin-right: 20px;
-  margin-top: 5px;
-  flex-direction: row;
+  border: 5px black solid;
+  border-radius: 10px;
+  width: 260px;
+  background-color: antiquewhite;
+}
+.contactos-link:hover{
+  transform: translateX(500px);
+  background-color: #33aaff;
+  transition: 4.5s ease-out;
 }
 .contact-details{
   font-size: 1.5rem;
-  
+  color: black;
   transition: transform 0.3s ease-out;
   
 }
 .contact-details:hover{
-  color:rgba(0, 5, 16, 0.936);
+  color:rgba(136, 243, 87, 0.936);
 }
    
 #volver-footer{
